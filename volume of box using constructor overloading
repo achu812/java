@@ -1,0 +1,30 @@
+class Box
+{
+ int a,b,c,volume;
+ Box()
+ {
+ a=2;
+ b=3;
+ c=8;
+ volume=a*b*c;
+ System.out.println("volume 1= "+volume);
+ }
+ Box(int x)
+ {
+
+ volume=x*x*x;
+ System.out.println("volume 2= "+volume);
+ }
+ Box(int x,int y,int z)
+ {
+
+ volume=x*y*z;
+ System.out.println("volume 3= "+volume);
+ }
+}
+class overload{
+ public static void main(String args[]) {
+ Box b1=new Box();
+ Box b2=new Box(5);
+ Box b3=new Box(3,5,6);
+}}
