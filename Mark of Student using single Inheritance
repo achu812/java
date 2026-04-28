@@ -1,0 +1,57 @@
+import java.util.Scanner;
+class student
+{
+
+ int rollno;
+ String name;
+
+ void getdata()
+ {
+ Scanner sc=new Scanner(System.in);
+ System.out.println("enter the Rollno \t");
+ rollno=sc.nextInt();
+ System.out.println("enter the Name \t");
+ name=sc.next();
+ }
+ void putdata()
+ {
+ System.out.println(" Rollno - "+rollno);
+ System.out.println("Name - "+name);
+
+ }
+}
+class test extends student
+{
+ int sub1,sub2;
+ void getmark()
+ {
+ Scanner sc=new Scanner(System.in);
+ System.out.println("enter the mark of subject1 \t");
+ sub1=sc.nextInt();
+ System.out.println("enter the mark of subject2 \t");
+ sub2=sc.nextInt();
+ }
+ void putmark()
+ {
+ System.out.println(" subject 1 mark - "+sub1);
+ System.out.println(" subject 2 mark - "+sub2);
+
+ }
+ void tot()
+ {
+ int total=sub1+sub2;
+ System.out.println(" Total mark - "+total);
+ }
+}
+class singleinherit {
+
+ public static void main(String[] args) {
+ test obj=new test();
+ obj.getdata();
+ obj.getmark();
+ obj.putdata();
+ obj.putmark();
+ obj.tot();
+
+ }
+}
