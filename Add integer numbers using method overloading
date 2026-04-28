@@ -1,0 +1,32 @@
+Import java.util.Scanner;
+class overload
+{
+ int sum;
+ int add(int a,int b)
+ {
+ sum=a+b;
+ return sum;
+ }
+ int add(int a,int b,int c)
+ {
+ sum=a+b+c;
+ return sum;
+ }
+}
+class method
+{
+ public static void main(String args[])
+{
+ int p,q;
+ Scanner sc=new Scanner(System.in);
+ System.out.println("enter three numbers");
+ int x=sc.nextInt();
+ int y=sc.nextInt();
+ int z=sc.nextInt();
+ overload obj=new overload();
+ p=obj.add(x,y);
+ q=obj.add(x,y,z);
+ System.out.println("Sum of first two numbers"+p);
+ System.out.println("Sum of first three numbers"+q);
+}
+}
