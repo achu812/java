@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class rectangle
+ {
+ int length,breadth;
+ rectangle(int l,int b)
+ {
+ length=l;
+ breadth=b;
+ }
+ int area()
+ {
+ return (length*breadth);
+ }
+ }
+class const
+{
+ public static void main(String args[]) {
+ Scanner sc=new Scanner(System.in);
+System.out.println("Enter length and breadth\t");
+ int l=sc.nextInt();
+ int b=sc.nextInt();
+ rectangle rect=new rectangle(l,b);
+ int a=rect.area();
+ System.out.println("Area="+a);
+}}
